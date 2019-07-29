@@ -1,5 +1,192 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.6">Jekyll</generator><link href="http://localhost:4000/tangjingBlog/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/tangjingBlog/" rel="alternate" type="text/html" /><updated>2019-07-09T17:17:00+08:00</updated><id>http://localhost:4000/tangjingBlog/feed.xml</id><title type="html">唐镜博客天地</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
-</subtitle><author><name>Tang Jing</name></author><entry><title type="html">Jekyll和Github搭建个人静态博客</title><link href="http://localhost:4000/tangjingBlog/%E5%94%90%E9%95%9C/" rel="alternate" type="text/html" title="Jekyll和Github搭建个人静态博客" /><published>2019-06-26T13:03:42+08:00</published><updated>2019-06-26T13:03:42+08:00</updated><id>http://localhost:4000/tangjingBlog/%E5%94%90%E9%95%9C</id><content type="html" xml:base="http://localhost:4000/tangjingBlog/%E5%94%90%E9%95%9C/">&lt;p&gt;唐镜的第一个测试博客，圆满finish!&lt;/p&gt;</content><author><name>唐镜</name></author><category term="Blog" /><category term="life" /><summary type="html">唐镜的第一个测试博客，圆满finish!</summary></entry><entry><title type="html">I conquer the Himalayas</title><link href="http://localhost:4000/tangjingBlog/i-conquer-the-himalayas/" rel="alternate" type="text/html" title="I conquer the Himalayas" /><published>2017-08-25T18:32:20+08:00</published><updated>2017-08-25T18:32:20+08:00</updated><id>http://localhost:4000/tangjingBlog/i-conquer-the-himalayas</id><content type="html" xml:base="http://localhost:4000/tangjingBlog/i-conquer-the-himalayas/">&lt;p&gt;Vaporware snackwave stumptown, small batch tattooed try-hard prism fanny pack 3 wolf moon edison bulb tofu hot chicken vice. Selvage iPhone hell of tote bag seitan organic PBR&amp;amp;B williamsburg palo santo tousled fanny pack pinterest normcore. Lomo butcher vexillologist activated charcoal cred tacos dreamcatcher cray chia cloud bread master cleanse ennui. Copper mug hella iceland occupy venmo. Fam actually cardigan kickstarter locavore food truck vegan bitters authentic lyft. Vaporware listicle keffiyeh adaptogen. Cloud bread stumptown swag la croix polaroid pickled. Next level yuccie four dollar toast polaroid. Portland chicharrones craft beer helvetica 3 wolf moon.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.6">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-07-29T21:15:04+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">唐镜博客天地</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
+</subtitle><author><name>Tang Jing</name></author><entry><title type="html">正则表达式学习</title><link href="http://localhost:4000/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/" rel="alternate" type="text/html" title="正则表达式学习" /><published>2019-07-29T00:00:00+08:00</published><updated>2019-07-29T00:00:00+08:00</updated><id>http://localhost:4000/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F</id><content type="html" xml:base="http://localhost:4000/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/">&lt;p&gt;今天是关于正则表达式的一些学习，以下是我的一些心得。&lt;br /&gt;
+首先说一下什么是正则表达式，它是查找符合某些复杂规则的字符串的匹配工具。&lt;br /&gt;
+言归正传，往下看：&lt;br /&gt;
+\b是正则表达式规定的一个特殊代码，代表着单词的开头或结尾。&lt;br /&gt;
+假如你要找的是hi后面不远处跟着一个Lucy，你应该用\bhi\b.*\bLucy\b.&lt;br /&gt;
+&lt;strong&gt;特殊代码&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;常用的特殊代码&lt;br /&gt;
+代码/语法	说明&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;.	 匹配除换行符以外的任意字符&lt;/li&gt;
+  &lt;li&gt;\w	 匹配字母或数字&lt;/li&gt;
+  &lt;li&gt;\s	 匹配任意的空白符&lt;/li&gt;
+  &lt;li&gt;\d	 匹配数字&lt;/li&gt;
+  &lt;li&gt;\b	 匹配单词的开始或结束&lt;/li&gt;
+  &lt;li&gt;^	 匹配字符串的开始&lt;/li&gt;
+  &lt;li&gt;$	 匹配字符串的结束&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;.是另一个特殊代码，代表除了换行符以外的任意字符。&lt;em&gt;同样是特殊的代码，不过它代表的不是字符，也不是位置，而是数量–它指定&lt;/em&gt;前边的内容可以重复任意次以使整个表达式得到匹配。因此，.&lt;em&gt;连在一起就意味着任意数量的不包含换行的字符。&lt;br /&gt;
+\ba\w&lt;/em&gt;\b匹配以字母a开头的单词-先是某个单词开始处(\b)，然后是字母a,然后是任意数量的字母或数字(\w&lt;em&gt;)，最后是单词结束处(\b)。&lt;br /&gt;
+\d+匹配1个或更多连续的数字。这里的+是和&lt;/em&gt;类似的特殊代码，不同的是*代表重复任意次(可能是0次)，而+则代表重复1次或更多次。 &lt;br /&gt;
+\b\w{6}\b 匹配刚好6个字母/数字的单词。&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;转义字符&lt;/strong&gt;&lt;br /&gt;
+\用来转义一些特殊字符，如：&lt;br /&gt;
+deerchao\.net匹配deerchao.net，c:\\windows匹配c:\windows,2\^8匹配2^8&lt;/p&gt;
+
+&lt;p&gt;常用的量词&lt;br /&gt;
+  代码/语法	说明&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;* 重复零次或更多次&lt;/li&gt;
+  &lt;li&gt;+ 重复一次或更多次&lt;/li&gt;
+  &lt;li&gt;?	 重复零次或一次&lt;/li&gt;
+  &lt;li&gt;{n}	 重复n次&lt;/li&gt;
+  &lt;li&gt;{n,}	 重复n次或更多次&lt;/li&gt;
+  &lt;li&gt;{n,m}	 重复n到m次&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;想匹配没有预定义特殊代码的字符集比如元音字母(a,e,i,o,u),怎么办？&lt;/p&gt;
+
+&lt;p&gt;很简单，你只需要在中括号里列出它们就行了，像[aeiou]就匹配任何一个元音字母，[.?!]匹配标点符号(.或?或!)(英文语句通常只以这三个标点结束)。  &lt;br /&gt;
+要注意的是，在中括号中，特殊代码不会被解释成其它意义，所以我们不需要写成[\.\?!]&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;反义&lt;/strong&gt;&lt;br /&gt;
+有时需要查找不属于某个简单定义的字符类的字符。比如想查找除了数字以外，其它任意字符都行的情况，这时需要用到反义：&lt;/p&gt;
+
+&lt;p&gt;常用的反义代码&lt;/p&gt;
+
+&lt;p&gt;代码/语法	说明&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;\W	 匹配任意不是字母和数字的字符&lt;/li&gt;
+  &lt;li&gt;\S	 匹配任意不是空白符的字符&lt;/li&gt;
+  &lt;li&gt;\D	 匹配任意非数字的字符&lt;/li&gt;
+  &lt;li&gt;\B	 匹配不是单词开头或结束的位置&lt;/li&gt;
+  &lt;li&gt;[^x]	 匹配除了x以外的任意字符&lt;/li&gt;
+  &lt;li&gt;[^aeiou]	 匹配除了aeiou这几个字母以外的任意字符&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;接下来来一些由浅入深的例子帮助理解正则表达式：&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;[\da-zA-Z_]{1,}  数字和字母组合，至少重复一次以上 等价于 &amp;gt; [\w]{1,}&lt;/li&gt;
+  &lt;li&gt;0\d{2}-\d{8}   匹配023-12345678这样的座机号&lt;/li&gt;
+  &lt;li&gt;\d{5,12}    5到12位的qq号&lt;/li&gt;
+  &lt;li&gt;\w+@.[0-9a-z]+.[a-z]{2,4}   邮箱格式匹配&lt;/li&gt;
+  &lt;li&gt;(\d{1,3}.){3}\d{1,3}  简单ip的匹配规则，但是能匹配888.999.256.12这样的非法ip&lt;/li&gt;
+  &lt;li&gt;
+    &lt;table&gt;
+      &lt;tbody&gt;
+        &lt;tr&gt;
+          &lt;td&gt;((2[0-4]\d&lt;/td&gt;
+          &lt;td&gt;25[0-5]&lt;/td&gt;
+          &lt;td&gt;[01]?\d\d?).){3}(2[0-4]\d&lt;/td&gt;
+          &lt;td&gt;25[0-5]&lt;/td&gt;
+          &lt;td&gt;[01]?\d\d?)  较准确的ip地址匹配&lt;/td&gt;
+        &lt;/tr&gt;
+      &lt;/tbody&gt;
+    &lt;/table&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;后面相对比较复杂的还有后向引用和位置指定的一些内容，基础的基本已经够用了。&lt;/p&gt;</content><author><name>tangjing</name></author><category term="Blog" /><category term="tech" /><summary type="html">今天是关于正则表达式的一些学习，以下是我的一些心得。 首先说一下什么是正则表达式，它是查找符合某些复杂规则的字符串的匹配工具。 言归正传，往下看： \b是正则表达式规定的一个特殊代码，代表着单词的开头或结尾。 假如你要找的是hi后面不远处跟着一个Lucy，你应该用\bhi\b.*\bLucy\b. 特殊代码 常用的特殊代码 代码/语法 说明 .  匹配除换行符以外的任意字符 \w  匹配字母或数字 \s  匹配任意的空白符 \d  匹配数字 \b  匹配单词的开始或结束 ^  匹配字符串的开始 $  匹配字符串的结束</summary></entry><entry><title type="html">md文件学习</title><link href="http://localhost:4000/%E5%8D%9A%E5%AE%A2%E6%A8%A1%E6%9D%BF/" rel="alternate" type="text/html" title="md文件学习" /><published>2019-07-12T00:00:00+08:00</published><updated>2019-07-12T00:00:00+08:00</updated><id>http://localhost:4000/%E5%8D%9A%E5%AE%A2%E6%A8%A1%E6%9D%BF</id><content type="html" xml:base="http://localhost:4000/%E5%8D%9A%E5%AE%A2%E6%A8%A1%E6%9D%BF/">&lt;p&gt;今天是关于md的文件学习，通过学习md实现简单的文本语言和html文件的转换。&lt;/p&gt;
+&lt;h1 id=&quot;一级标题&quot;&gt;一级标题&lt;/h1&gt;
+&lt;h2 id=&quot;二级标题&quot;&gt;二级标题&lt;/h2&gt;
+&lt;h3 id=&quot;三级标题&quot;&gt;三级标题&lt;/h3&gt;
+
+&lt;p&gt;代码框：&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;int a=3;
+int b=5;
+print(a+b);
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;代码高亮显示：&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;    &lt;span class=&quot;no&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;s&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'helloWord'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;nb&quot;&gt;printf&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;s&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;这里是强调&lt;em&gt;ace&lt;/em&gt;或者&lt;strong&gt;加粗&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;文字换行(使用方式，在md文字换行处使用敲两个空格加回车)：&lt;br /&gt;
+厚大司考华工科技哈卡&lt;br /&gt;
+打火机卡换个卡&lt;br /&gt;
+到货时间按客户给空间撒谎&lt;/p&gt;
+
+&lt;p&gt;下面没有换行：&lt;br /&gt;
+没有换行上课还干活客户收到卡工行卡
+的哈萨克计划公开
+手机行货&lt;/p&gt;
+
+&lt;p&gt;无序列表&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;apple&lt;/li&gt;
+  &lt;li&gt;dog&lt;/li&gt;
+  &lt;li&gt;jack&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;有序列表&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;apple&lt;/li&gt;
+  &lt;li&gt;dog&lt;/li&gt;
+  &lt;li&gt;jack&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;区块引用&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;给我一个残血，还你一个世界！
+    &lt;blockquote&gt;
+      &lt;p&gt;无极剑圣-易大师。&lt;/p&gt;
+    &lt;/blockquote&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;华丽的分割线&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;一级引用&lt;/p&gt;
+  &lt;blockquote&gt;
+    &lt;p&gt;二级引用&lt;/p&gt;
+  &lt;/blockquote&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;超链接&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://www.baidu.com&quot;&gt;百度&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;下面插入一张图片
+&lt;img src=&quot;/assets/img/tech.jpg&quot; alt=&quot;图片&quot; /&gt;&lt;/p&gt;</content><author><name>tangjing</name></author><category term="Blog" /><category term="tech" /><summary type="html">今天是关于md的文件学习，通过学习md实现简单的文本语言和html文件的转换。 一级标题 二级标题 三级标题</summary></entry><entry><title type="html">博客心得</title><link href="http://localhost:4000/%E5%8D%9A%E5%AE%A2%E5%BF%83%E5%BE%97/" rel="alternate" type="text/html" title="博客心得" /><published>2019-07-09T19:53:42+08:00</published><updated>2019-07-09T19:53:42+08:00</updated><id>http://localhost:4000/%E5%8D%9A%E5%AE%A2%E5%BF%83%E5%BE%97</id><content type="html" xml:base="http://localhost:4000/%E5%8D%9A%E5%AE%A2%E5%BF%83%E5%BE%97/">&lt;blockquote&gt;
+  &lt;p&gt;今天是搭建我博客的第一天，心里想想有点小激动。说实话，搭建的过程中，有很多问题，其中
+有两个特别大的问题差点把我弄奔溃了，第一个就是&lt;code class=&quot;highlighter-rouge&quot;&gt;ruby&lt;/code&gt;,这是个版本控制，其实说起来有点专业，
+简单理解就是个帮我们下载各种包的下载工具，有点类似&lt;code class=&quot;highlighter-rouge&quot;&gt;windows&lt;/code&gt;下的迅雷，只不过一个是图形界
+面，一个是命令行操作。有点扯远了，大致情形是废了挺大劲安装好它，用它进行一系列安装&lt;code class=&quot;highlighter-rouge&quot;&gt;jekyll&lt;/code&gt;
+主题时报错，大概提示就是ruby版本不够，需要更新版本，一怒之下想更新最新的，却发现下载巨慢，
+原因是镜像文件所在服务器在国外。所以，这里提醒一点，就是能更换国内镜像源一定要更换，不然几
+MB的文件你能下载几个小时，233333.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/happy.jpg&quot; alt=&quot;happy&quot; /&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;第二点就更让人淡疼了，已经在本地运行好了&lt;code class=&quot;highlighter-rouge&quot;&gt;jekyll&lt;/code&gt;主题，样式什么的都还行，放到&lt;code class=&quot;highlighter-rouge&quot;&gt;github&lt;/code&gt;
+上就直接胡乱排版，css和js根本无法加载。一开始按照网上的各种方式尝试，搞了两个多小时无果，结
+果打算尝试换换其他主题，然后发现换了好几个主题依然这样，内心一万只三个字名字的神兽奔腾而过。
+这下我基本确定不是主题问题，而是样式加载问题，使用f12进入开发者模式查看，发现是css和js路
+径出错，但我基本是按照网上的教程一步步走的，为啥他们都没这个问题而我却有？然后我又在网上百
+度了半天，在快绝望的时候尝试了下在&lt;code class=&quot;highlighter-rouge&quot;&gt;config.yml&lt;/code&gt;文件中的&lt;code class=&quot;highlighter-rouge&quot;&gt;base_url&lt;/code&gt;里增加一个目录&lt;code class=&quot;highlighter-rouge&quot;&gt;/tangjingB&lt;/code&gt;
+log,之前没修改这里是因为教程里从没提到过。但是我的问题恰恰就是这里，因为别人的github博客
+访问域名都是一级域名，我的是二级，&lt;code class=&quot;highlighter-rouge&quot;&gt;https://tangjiahao.github.io/tangjingBlog/&lt;/code&gt;,他
+们没有后面的&lt;code class=&quot;highlighter-rouge&quot;&gt;/tangjingBlog&lt;/code&gt;这样的二级域名，心塞塞，就是这么个东西卡了快一整天，都快放弃
+了！这里提醒使用二级域名的，一定要注意是否在&lt;code class=&quot;highlighter-rouge&quot;&gt;base_url&lt;/code&gt;里增加内容！大致如下：&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;    &lt;span class=&quot;ss&quot;&gt;permalink: &lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;':title/'&lt;/span&gt;
+    &lt;span class=&quot;ss&quot;&gt;baseurl: &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;/tangjingBlog&quot;&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;# the subpath of your site, e.g. /blog&lt;/span&gt;
+    &lt;span class=&quot;ss&quot;&gt;url: &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&quot;&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;# the base hostname &amp;amp; protocol for your site, e.g. http://example.com&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;本博客的大概框架如下，就是导航栏有两个子项目，about关于自己的介绍，blog博客内容，点击
+进入可分别看到，然后有个搜索栏可以搜索博客的题目，方便自己查找，以上就是今天想说的，做完还是
+挺有成就感的哈。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;具体如何使用jekyll和github搭建博客的教程，我就不详细写了，这里推荐一篇别人的
+&lt;a href=&quot;https://www.jianshu.com/p/82652c7a1fa4&quot;&gt;教程&lt;/a&gt;。&lt;/p&gt;
+&lt;/blockquote&gt;</content><author><name>tangjing</name></author><category term="Blog" /><category term="free" /><summary type="html">今天是搭建我博客的第一天，心里想想有点小激动。说实话，搭建的过程中，有很多问题，其中 有两个特别大的问题差点把我弄奔溃了，第一个就是ruby,这是个版本控制，其实说起来有点专业， 简单理解就是个帮我们下载各种包的下载工具，有点类似windows下的迅雷，只不过一个是图形界 面，一个是命令行操作。有点扯远了，大致情形是废了挺大劲安装好它，用它进行一系列安装jekyll 主题时报错，大概提示就是ruby版本不够，需要更新版本，一怒之下想更新最新的，却发现下载巨慢， 原因是镜像文件所在服务器在国外。所以，这里提醒一点，就是能更换国内镜像源一定要更换，不然几 MB的文件你能下载几个小时，233333.</summary></entry><entry><title type="html">Jekyll和Github搭建个人静态博客</title><link href="http://localhost:4000/%E5%94%90%E9%95%9C/" rel="alternate" type="text/html" title="Jekyll和Github搭建个人静态博客" /><published>2019-06-26T13:03:42+08:00</published><updated>2019-06-26T13:03:42+08:00</updated><id>http://localhost:4000/%E5%94%90%E9%95%9C</id><content type="html" xml:base="http://localhost:4000/%E5%94%90%E9%95%9C/">&lt;p&gt;唐镜的第一个测试博客，圆满finish!&lt;/p&gt;</content><author><name>tangjing</name></author><category term="Blog" /><category term="life" /><summary type="html">唐镜的第一个测试博客，圆满finish!</summary></entry><entry><title type="html">I conquer the Himalayas</title><link href="http://localhost:4000/i-conquer-the-himalayas/" rel="alternate" type="text/html" title="I conquer the Himalayas" /><published>2017-08-25T18:32:20+08:00</published><updated>2017-08-25T18:32:20+08:00</updated><id>http://localhost:4000/i-conquer-the-himalayas</id><content type="html" xml:base="http://localhost:4000/i-conquer-the-himalayas/">&lt;p&gt;Vaporware snackwave stumptown, small batch tattooed try-hard prism fanny pack 3 wolf moon edison bulb tofu hot chicken vice. Selvage iPhone hell of tote bag seitan organic PBR&amp;amp;B williamsburg palo santo tousled fanny pack pinterest normcore. Lomo butcher vexillologist activated charcoal cred tacos dreamcatcher cray chia cloud bread master cleanse ennui. Copper mug hella iceland occupy venmo. Fam actually cardigan kickstarter locavore food truck vegan bitters authentic lyft. Vaporware listicle keffiyeh adaptogen. Cloud bread stumptown swag la croix polaroid pickled. Next level yuccie four dollar toast polaroid. Portland chicharrones craft beer helvetica 3 wolf moon.&lt;/p&gt;
 
 &lt;p&gt;Fanny pack wolf asymmetrical PBR&amp;amp;B activated charcoal chia retro iPhone. Everyday carry artisan live-edge bespoke ramps. Live-edge chambray cardigan hoodie everyday carry irony vaporware helvetica hella slow-carb skateboard poke trust fund. Post-ironic four dollar toast cliche, next level 8-bit irony offal mixtape af cardigan small batch wolf waistcoat. Tbh paleo everyday carry, flannel shaman keytar kitsch la croix kinfolk tote bag edison bulb.&lt;/p&gt;
 
@@ -9,21 +196,9 @@
 
 &lt;p&gt;Taxidermy shaman irony williamsburg bespoke. Freegan ugh mumblecore selfies, shabby chic neutra everyday carry. Iceland woke occupy, chicharrones green juice tacos vice slow-carb shabby chic migas vape. Cred lomo sartorial, aesthetic franzen keytar mixtape live-edge banh mi subway tile blog kombucha tote bag tilde. Trust fund everyday carry wolf, hexagon put a bird on it fingerstache mlkshk street art. Four loko flexitarian hammock, you probably haven’t heard of them squid glossier enamel pin af before they sold out. Jianbing narwhal chartreuse helvetica 3 wolf moon quinoa. 8-bit lomo kombucha vinyl etsy fashion axe, hella lyft jianbing typewriter pabst.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/tangjingBlog/assets/img/yosh-ginsu.jpg&quot; alt=&quot;Yosh Ginsu&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/img/yosh-ginsu.jpg&quot; alt=&quot;Yosh Ginsu&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;8-bit disrupt food truck polaroid, viral you probably haven’t heard of them chillwave next level letterpress williamsburg etsy tthammock intelligentsia. Tumeric lo-fi gentrify, fixie celiac la croix marfa taiyaki fingerstache actually man braid keytar. Brunch coloring book succulents church-key umami affogato. Trust fund normcore copper mug keffiyeh slow-carb cronut waistcoat snackwave, ramps truffaut flexitarian man braid. Celiac flexitarian authentic hashtag wayfarers. Next level pitchfork scenester godard. Salvia etsy edison bulb knausgaard poke jianbing actually. Mlkshk retro cardigan photo booth swag. Occupy shaman austin, meditation green juice flannel succulents twee. Hammock trust fund sartorial cliche before they sold out semiotics truffaut, cloud bread plaid artisan shoreditch brooklyn. Shoreditch air plant asymmetrical DIY. Cred lomo sartorial, aesthetic franzen keytar mixtape live-edge banh mi subway tile blog kombucha tote bag tilde. Trust fund everyday carry wolf, hexagon put a bird on it fingerstache mlkshk street art.&lt;/p&gt;</content><author><name>Adam Neilson</name></author><category term="Blog" /><category term="Mountains" /><summary type="html">Vaporware snackwave stumptown, small batch tattooed try-hard prism fanny pack 3 wolf moon edison bulb tofu hot chicken vice. Selvage iPhone hell of tote bag seitan organic PBR&amp;amp;B williamsburg palo santo tousled fanny pack pinterest normcore. Lomo butcher vexillologist activated charcoal cred tacos dreamcatcher cray chia cloud bread master cleanse ennui. Copper mug hella iceland occupy venmo. Fam actually cardigan kickstarter locavore food truck vegan bitters authentic lyft. Vaporware listicle keffiyeh adaptogen. Cloud bread stumptown swag la croix polaroid pickled. Next level yuccie four dollar toast polaroid. Portland chicharrones craft beer helvetica 3 wolf moon.</summary></entry><entry><title type="html">I meet the sunset</title><link href="http://localhost:4000/tangjingBlog/i-meet-the-sunset/" rel="alternate" type="text/html" title="I meet the sunset" /><published>2017-08-24T18:32:20+08:00</published><updated>2017-08-24T18:32:20+08:00</updated><id>http://localhost:4000/tangjingBlog/i-meet-the-sunset</id><content type="html" xml:base="http://localhost:4000/tangjingBlog/i-meet-the-sunset/">&lt;p&gt;You’ll find this post in your &lt;code class=&quot;highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run &lt;code class=&quot;highlighter-rouge&quot;&gt;jekyll serve&lt;/code&gt;, which launches a web server and auto-regenerates your site when a file is updated.&lt;/p&gt;
-
-&lt;p&gt;To add new posts, simply add a file in the &lt;code class=&quot;highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory that follows the convention &lt;code class=&quot;highlighter-rouge&quot;&gt;YYYY-MM-DD-name-of-post.ext&lt;/code&gt; and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.&lt;/p&gt;
-
-&lt;p&gt;Jekyll also offers powerful support for code snippets:&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-  &lt;span class=&quot;nb&quot;&gt;puts&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;Hi, &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'Tom'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;c1&quot;&gt;#=&amp;gt; prints 'Hi, Tom' to STDOUT.&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;p&gt;Check out the &lt;a href=&quot;https://jekyllrb.com/docs/home&quot;&gt;Jekyll docs&lt;/a&gt; for more info on how to get the most out of Jekyll. File all bugs/feature requests at &lt;a href=&quot;https://github.com/jekyll/jekyll&quot;&gt;Jekyll’s GitHub repo&lt;/a&gt;. If you have questions, you can ask them on &lt;a href=&quot;https://talk.jekyllrb.com/&quot;&gt;Jekyll Talk&lt;/a&gt;.&lt;/p&gt;</content><author><name>Tang Jing</name></author><category term="Blog" /><category term="Sunset" /><summary type="html">You’ll find this post in your _posts directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run jekyll serve, which launches a web server and auto-regenerates your site when a file is updated.</summary></entry><entry><title type="html">On a meeting with adventures</title><link href="http://localhost:4000/tangjingBlog/meeting-with-adventures/" rel="alternate" type="text/html" title="On a meeting with adventures" /><published>2017-08-23T18:32:20+08:00</published><updated>2017-08-23T18:32:20+08:00</updated><id>http://localhost:4000/tangjingBlog/meeting-with-adventures</id><content type="html" xml:base="http://localhost:4000/tangjingBlog/meeting-with-adventures/">&lt;p&gt;You’ll find this post in your &lt;code class=&quot;highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run &lt;code class=&quot;highlighter-rouge&quot;&gt;jekyll serve&lt;/code&gt;, which launches a web server and auto-regenerates your site when a file is updated.&lt;/p&gt;
+&lt;p&gt;8-bit disrupt food truck polaroid, viral you probably haven’t heard of them chillwave next level letterpress williamsburg etsy tthammock intelligentsia. Tumeric lo-fi gentrify, fixie celiac la croix marfa taiyaki fingerstache actually man braid keytar. Brunch coloring book succulents church-key umami affogato. Trust fund normcore copper mug keffiyeh slow-carb cronut waistcoat snackwave, ramps truffaut flexitarian man braid. Celiac flexitarian authentic hashtag wayfarers. Next level pitchfork scenester godard. Salvia etsy edison bulb knausgaard poke jianbing actually. Mlkshk retro cardigan photo booth swag. Occupy shaman austin, meditation green juice flannel succulents twee. Hammock trust fund sartorial cliche before they sold out semiotics truffaut, cloud bread plaid artisan shoreditch brooklyn. Shoreditch air plant asymmetrical DIY. Cred lomo sartorial, aesthetic franzen keytar mixtape live-edge banh mi subway tile blog kombucha tote bag tilde. Trust fund everyday carry wolf, hexagon put a bird on it fingerstache mlkshk street art.&lt;/p&gt;</content><author><name>Adam Neilson</name></author><category term="Blog" /><category term="Mountains" /><summary type="html">Vaporware snackwave stumptown, small batch tattooed try-hard prism fanny pack 3 wolf moon edison bulb tofu hot chicken vice. Selvage iPhone hell of tote bag seitan organic PBR&amp;amp;B williamsburg palo santo tousled fanny pack pinterest normcore. Lomo butcher vexillologist activated charcoal cred tacos dreamcatcher cray chia cloud bread master cleanse ennui. Copper mug hella iceland occupy venmo. Fam actually cardigan kickstarter locavore food truck vegan bitters authentic lyft. Vaporware listicle keffiyeh adaptogen. Cloud bread stumptown swag la croix polaroid pickled. Next level yuccie four dollar toast polaroid. Portland chicharrones craft beer helvetica 3 wolf moon.</summary></entry><entry><title type="html">I meet the sunset</title><link href="http://localhost:4000/i-meet-the-sunset/" rel="alternate" type="text/html" title="I meet the sunset" /><published>2017-08-24T18:32:20+08:00</published><updated>2017-08-24T18:32:20+08:00</updated><id>http://localhost:4000/i-meet-the-sunset</id><content type="html" xml:base="http://localhost:4000/i-meet-the-sunset/">&lt;p&gt;You’ll find this post in your &lt;code class=&quot;highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run &lt;code class=&quot;highlighter-rouge&quot;&gt;jekyll serve&lt;/code&gt;, which launches a web server and auto-regenerates your site when a file is updated.&lt;/p&gt;
 
 &lt;p&gt;To add new posts, simply add a file in the &lt;code class=&quot;highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory that follows the convention &lt;code class=&quot;highlighter-rouge&quot;&gt;YYYY-MM-DD-name-of-post.ext&lt;/code&gt; and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.&lt;/p&gt;
 
@@ -35,7 +210,7 @@
 &lt;span class=&quot;n&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'Tom'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
 &lt;span class=&quot;c1&quot;&gt;#=&amp;gt; prints 'Hi, Tom' to STDOUT.&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
-&lt;p&gt;Check out the &lt;a href=&quot;https://jekyllrb.com/docs/home&quot;&gt;Jekyll docs&lt;/a&gt; for more info on how to get the most out of Jekyll. File all bugs/feature requests at &lt;a href=&quot;https://github.com/jekyll/jekyll&quot;&gt;Jekyll’s GitHub repo&lt;/a&gt;. If you have questions, you can ask them on &lt;a href=&quot;https://talk.jekyllrb.com/&quot;&gt;Jekyll Talk&lt;/a&gt;.&lt;/p&gt;</content><author><name>Tang Jing</name></author><category term="Blog" /><category term="Sunset" /><summary type="html">You’ll find this post in your _posts directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run jekyll serve, which launches a web server and auto-regenerates your site when a file is updated.</summary></entry><entry><title type="html">Snowboarding and my life</title><link href="http://localhost:4000/tangjingBlog/snowboarding-and-my-life/" rel="alternate" type="text/html" title="Snowboarding and my life" /><published>2017-08-22T18:32:20+08:00</published><updated>2017-08-22T18:32:20+08:00</updated><id>http://localhost:4000/tangjingBlog/snowboarding-and-my-life</id><content type="html" xml:base="http://localhost:4000/tangjingBlog/snowboarding-and-my-life/">&lt;p&gt;You’ll find this post in your &lt;code class=&quot;highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run &lt;code class=&quot;highlighter-rouge&quot;&gt;jekyll serve&lt;/code&gt;, which launches a web server and auto-regenerates your site when a file is updated.&lt;/p&gt;
+&lt;p&gt;Check out the &lt;a href=&quot;https://jekyllrb.com/docs/home&quot;&gt;Jekyll docs&lt;/a&gt; for more info on how to get the most out of Jekyll. File all bugs/feature requests at &lt;a href=&quot;https://github.com/jekyll/jekyll&quot;&gt;Jekyll’s GitHub repo&lt;/a&gt;. If you have questions, you can ask them on &lt;a href=&quot;https://talk.jekyllrb.com/&quot;&gt;Jekyll Talk&lt;/a&gt;.&lt;/p&gt;</content><author><name>Tang Jing</name></author><category term="Blog" /><category term="Sunset" /><summary type="html">You’ll find this post in your _posts directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run jekyll serve, which launches a web server and auto-regenerates your site when a file is updated.</summary></entry><entry><title type="html">On a meeting with adventures</title><link href="http://localhost:4000/meeting-with-adventures/" rel="alternate" type="text/html" title="On a meeting with adventures" /><published>2017-08-23T18:32:20+08:00</published><updated>2017-08-23T18:32:20+08:00</updated><id>http://localhost:4000/meeting-with-adventures</id><content type="html" xml:base="http://localhost:4000/meeting-with-adventures/">&lt;p&gt;You’ll find this post in your &lt;code class=&quot;highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run &lt;code class=&quot;highlighter-rouge&quot;&gt;jekyll serve&lt;/code&gt;, which launches a web server and auto-regenerates your site when a file is updated.&lt;/p&gt;
 
 &lt;p&gt;To add new posts, simply add a file in the &lt;code class=&quot;highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory that follows the convention &lt;code class=&quot;highlighter-rouge&quot;&gt;YYYY-MM-DD-name-of-post.ext&lt;/code&gt; and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.&lt;/p&gt;
 
@@ -47,7 +222,7 @@
 &lt;span class=&quot;n&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'Tom'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
 &lt;span class=&quot;c1&quot;&gt;#=&amp;gt; prints 'Hi, Tom' to STDOUT.&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
-&lt;p&gt;Check out the &lt;a href=&quot;https://jekyllrb.com/docs/home&quot;&gt;Jekyll docs&lt;/a&gt; for more info on how to get the most out of Jekyll. File all bugs/feature requests at &lt;a href=&quot;https://github.com/jekyll/jekyll&quot;&gt;Jekyll’s GitHub repo&lt;/a&gt;. If you have questions, you can ask them on &lt;a href=&quot;https://talk.jekyllrb.com/&quot;&gt;Jekyll Talk&lt;/a&gt;.&lt;/p&gt;</content><author><name>Tang Jing</name></author><category term="Blog" /><category term="Mountains" /><category term="Sport" /><summary type="html">You’ll find this post in your _posts directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run jekyll serve, which launches a web server and auto-regenerates your site when a file is updated.</summary></entry><entry><title type="html">Time to think</title><link href="http://localhost:4000/tangjingBlog/time-to-think/" rel="alternate" type="text/html" title="Time to think" /><published>2017-08-21T18:32:20+08:00</published><updated>2017-08-21T18:32:20+08:00</updated><id>http://localhost:4000/tangjingBlog/time-to-think</id><content type="html" xml:base="http://localhost:4000/tangjingBlog/time-to-think/">&lt;p&gt;You’ll find this post in your &lt;code class=&quot;highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run &lt;code class=&quot;highlighter-rouge&quot;&gt;jekyll serve&lt;/code&gt;, which launches a web server and auto-regenerates your site when a file is updated.&lt;/p&gt;
+&lt;p&gt;Check out the &lt;a href=&quot;https://jekyllrb.com/docs/home&quot;&gt;Jekyll docs&lt;/a&gt; for more info on how to get the most out of Jekyll. File all bugs/feature requests at &lt;a href=&quot;https://github.com/jekyll/jekyll&quot;&gt;Jekyll’s GitHub repo&lt;/a&gt;. If you have questions, you can ask them on &lt;a href=&quot;https://talk.jekyllrb.com/&quot;&gt;Jekyll Talk&lt;/a&gt;.&lt;/p&gt;</content><author><name>Tang Jing</name></author><category term="Blog" /><category term="Sunset" /><summary type="html">You’ll find this post in your _posts directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run jekyll serve, which launches a web server and auto-regenerates your site when a file is updated.</summary></entry><entry><title type="html">Snowboarding and my life</title><link href="http://localhost:4000/snowboarding-and-my-life/" rel="alternate" type="text/html" title="Snowboarding and my life" /><published>2017-08-22T18:32:20+08:00</published><updated>2017-08-22T18:32:20+08:00</updated><id>http://localhost:4000/snowboarding-and-my-life</id><content type="html" xml:base="http://localhost:4000/snowboarding-and-my-life/">&lt;p&gt;You’ll find this post in your &lt;code class=&quot;highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run &lt;code class=&quot;highlighter-rouge&quot;&gt;jekyll serve&lt;/code&gt;, which launches a web server and auto-regenerates your site when a file is updated.&lt;/p&gt;
 
 &lt;p&gt;To add new posts, simply add a file in the &lt;code class=&quot;highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory that follows the convention &lt;code class=&quot;highlighter-rouge&quot;&gt;YYYY-MM-DD-name-of-post.ext&lt;/code&gt; and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.&lt;/p&gt;
 
@@ -59,7 +234,19 @@
 &lt;span class=&quot;n&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'Tom'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
 &lt;span class=&quot;c1&quot;&gt;#=&amp;gt; prints 'Hi, Tom' to STDOUT.&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
-&lt;p&gt;Check out the &lt;a href=&quot;https://jekyllrb.com/docs/home&quot;&gt;Jekyll docs&lt;/a&gt; for more info on how to get the most out of Jekyll. File all bugs/feature requests at &lt;a href=&quot;https://github.com/jekyll/jekyll&quot;&gt;Jekyll’s GitHub repo&lt;/a&gt;. If you have questions, you can ask them on &lt;a href=&quot;https://talk.jekyllrb.com/&quot;&gt;Jekyll Talk&lt;/a&gt;.&lt;/p&gt;</content><author><name>Tang Jing</name></author><category term="Blog" /><category term="Meditation" /><summary type="html">You’ll find this post in your _posts directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run jekyll serve, which launches a web server and auto-regenerates your site when a file is updated.</summary></entry><entry><title type="html">The forest in the fog</title><link href="http://localhost:4000/tangjingBlog/the-forest-in-the-fog/" rel="alternate" type="text/html" title="The forest in the fog" /><published>2017-08-20T18:32:20+08:00</published><updated>2017-08-20T18:32:20+08:00</updated><id>http://localhost:4000/tangjingBlog/the-forest-in-the-fog</id><content type="html" xml:base="http://localhost:4000/tangjingBlog/the-forest-in-the-fog/">&lt;p&gt;You’ll find this post in your &lt;code class=&quot;highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run &lt;code class=&quot;highlighter-rouge&quot;&gt;jekyll serve&lt;/code&gt;, which launches a web server and auto-regenerates your site when a file is updated.&lt;/p&gt;
+&lt;p&gt;Check out the &lt;a href=&quot;https://jekyllrb.com/docs/home&quot;&gt;Jekyll docs&lt;/a&gt; for more info on how to get the most out of Jekyll. File all bugs/feature requests at &lt;a href=&quot;https://github.com/jekyll/jekyll&quot;&gt;Jekyll’s GitHub repo&lt;/a&gt;. If you have questions, you can ask them on &lt;a href=&quot;https://talk.jekyllrb.com/&quot;&gt;Jekyll Talk&lt;/a&gt;.&lt;/p&gt;</content><author><name>Tang Jing</name></author><category term="Blog" /><category term="Mountains" /><category term="Sport" /><summary type="html">You’ll find this post in your _posts directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run jekyll serve, which launches a web server and auto-regenerates your site when a file is updated.</summary></entry><entry><title type="html">Time to think</title><link href="http://localhost:4000/time-to-think/" rel="alternate" type="text/html" title="Time to think" /><published>2017-08-21T18:32:20+08:00</published><updated>2017-08-21T18:32:20+08:00</updated><id>http://localhost:4000/time-to-think</id><content type="html" xml:base="http://localhost:4000/time-to-think/">&lt;p&gt;You’ll find this post in your &lt;code class=&quot;highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run &lt;code class=&quot;highlighter-rouge&quot;&gt;jekyll serve&lt;/code&gt;, which launches a web server and auto-regenerates your site when a file is updated.&lt;/p&gt;
+
+&lt;p&gt;To add new posts, simply add a file in the &lt;code class=&quot;highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory that follows the convention &lt;code class=&quot;highlighter-rouge&quot;&gt;YYYY-MM-DD-name-of-post.ext&lt;/code&gt; and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.&lt;/p&gt;
+
+&lt;p&gt;Jekyll also offers powerful support for code snippets:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+  &lt;span class=&quot;nb&quot;&gt;puts&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;Hi, &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'Tom'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;#=&amp;gt; prints 'Hi, Tom' to STDOUT.&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;Check out the &lt;a href=&quot;https://jekyllrb.com/docs/home&quot;&gt;Jekyll docs&lt;/a&gt; for more info on how to get the most out of Jekyll. File all bugs/feature requests at &lt;a href=&quot;https://github.com/jekyll/jekyll&quot;&gt;Jekyll’s GitHub repo&lt;/a&gt;. If you have questions, you can ask them on &lt;a href=&quot;https://talk.jekyllrb.com/&quot;&gt;Jekyll Talk&lt;/a&gt;.&lt;/p&gt;</content><author><name>Tang Jing</name></author><category term="Blog" /><category term="Meditation" /><summary type="html">You’ll find this post in your _posts directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run jekyll serve, which launches a web server and auto-regenerates your site when a file is updated.</summary></entry><entry><title type="html">The forest in the fog</title><link href="http://localhost:4000/the-forest-in-the-fog/" rel="alternate" type="text/html" title="The forest in the fog" /><published>2017-08-20T18:32:20+08:00</published><updated>2017-08-20T18:32:20+08:00</updated><id>http://localhost:4000/the-forest-in-the-fog</id><content type="html" xml:base="http://localhost:4000/the-forest-in-the-fog/">&lt;p&gt;You’ll find this post in your &lt;code class=&quot;highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run &lt;code class=&quot;highlighter-rouge&quot;&gt;jekyll serve&lt;/code&gt;, which launches a web server and auto-regenerates your site when a file is updated.&lt;/p&gt;
 
 &lt;p&gt;To add new posts, simply add a file in the &lt;code class=&quot;highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory that follows the convention &lt;code class=&quot;highlighter-rouge&quot;&gt;YYYY-MM-DD-name-of-post.ext&lt;/code&gt; and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.&lt;/p&gt;
 

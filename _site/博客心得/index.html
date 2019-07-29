@@ -2,8 +2,8 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8">
-	<title>Jekyll和Github搭建个人静态博客 - 唐镜博客天地</title>
-	<meta name="description" content="个人博客测试">
+	<title>博客心得 - 唐镜博客天地</title>
+	<meta name="description" content="个人搭建博客心得和本博客介绍">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	<meta property="og:image" content="">
@@ -51,15 +51,54 @@
 
   <article class="article-page">
     <div class="page-image">
-      <div class="cover-image" style="background: url(/assets/img/life.jpeg) center no-repeat; background-size: cover;"></div>
+      <div class="cover-image" style="background: url(/assets/img/suibi.jpg) center no-repeat; background-size: cover;"></div>
     </div>
     <div class="wrapper">
       <div class="page-content">
         <div class="header-page">
-          <h1 class="page-title">Jekyll和Github搭建个人静态博客</h1>
-          <div class="page-date"><time datetime="2019-06-26 13:03:42 +0800">2019, Jun 26</time></div>
+          <h1 class="page-title">博客心得</h1>
+          <div class="page-date"><time datetime="2019-07-09 19:53:42 +0800">2019, Jul 09</time></div>
         </div>
-        <p>唐镜的第一个测试博客，圆满finish!</p>
+        <blockquote>
+  <p>今天是搭建我博客的第一天，心里想想有点小激动。说实话，搭建的过程中，有很多问题，其中
+有两个特别大的问题差点把我弄奔溃了，第一个就是<code class="highlighter-rouge">ruby</code>,这是个版本控制，其实说起来有点专业，
+简单理解就是个帮我们下载各种包的下载工具，有点类似<code class="highlighter-rouge">windows</code>下的迅雷，只不过一个是图形界
+面，一个是命令行操作。有点扯远了，大致情形是废了挺大劲安装好它，用它进行一系列安装<code class="highlighter-rouge">jekyll</code>
+主题时报错，大概提示就是ruby版本不够，需要更新版本，一怒之下想更新最新的，却发现下载巨慢，
+原因是镜像文件所在服务器在国外。所以，这里提醒一点，就是能更换国内镜像源一定要更换，不然几
+MB的文件你能下载几个小时，233333.</p>
+</blockquote>
+
+<p><img src="/assets/img/happy.jpg" alt="happy" /></p>
+
+<blockquote>
+  <p>第二点就更让人淡疼了，已经在本地运行好了<code class="highlighter-rouge">jekyll</code>主题，样式什么的都还行，放到<code class="highlighter-rouge">github</code>
+上就直接胡乱排版，css和js根本无法加载。一开始按照网上的各种方式尝试，搞了两个多小时无果，结
+果打算尝试换换其他主题，然后发现换了好几个主题依然这样，内心一万只三个字名字的神兽奔腾而过。
+这下我基本确定不是主题问题，而是样式加载问题，使用f12进入开发者模式查看，发现是css和js路
+径出错，但我基本是按照网上的教程一步步走的，为啥他们都没这个问题而我却有？然后我又在网上百
+度了半天，在快绝望的时候尝试了下在<code class="highlighter-rouge">config.yml</code>文件中的<code class="highlighter-rouge">base_url</code>里增加一个目录<code class="highlighter-rouge">/tangjingB</code>
+log,之前没修改这里是因为教程里从没提到过。但是我的问题恰恰就是这里，因为别人的github博客
+访问域名都是一级域名，我的是二级，<code class="highlighter-rouge">https://tangjiahao.github.io/tangjingBlog/</code>,他
+们没有后面的<code class="highlighter-rouge">/tangjingBlog</code>这样的二级域名，心塞塞，就是这么个东西卡了快一整天，都快放弃
+了！这里提醒使用二级域名的，一定要注意是否在<code class="highlighter-rouge">base_url</code>里增加内容！大致如下：</p>
+</blockquote>
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby">    <span class="ss">permalink: </span><span class="s1">':title/'</span>
+    <span class="ss">baseurl: </span><span class="s2">"/tangjingBlog"</span> <span class="c1"># the subpath of your site, e.g. /blog</span>
+    <span class="ss">url: </span><span class="s2">""</span> <span class="c1"># the base hostname &amp; protocol for your site, e.g. http://example.com</span></code></pre></figure>
+
+<blockquote>
+  <p>本博客的大概框架如下，就是导航栏有两个子项目，about关于自己的介绍，blog博客内容，点击
+进入可分别看到，然后有个搜索栏可以搜索博客的题目，方便自己查找，以上就是今天想说的，做完还是
+挺有成就感的哈。</p>
+</blockquote>
+
+<blockquote>
+  <p>具体如何使用jekyll和github搭建博客的教程，我就不详细写了，这里推荐一篇别人的
+<a href="https://www.jianshu.com/p/82652c7a1fa4">教程</a>。</p>
+</blockquote>
+
 
         <div class="page-footer">
           <div class="page-tag">
@@ -67,14 +106,14 @@
             
             <a href="/tags#Blog" class="tag">| Blog</a>
             
-            <a href="/tags#life" class="tag">| life</a>
+            <a href="/tags#free" class="tag">| free</a>
             
           </div><!-- End Tags -->
           <div class="page-share">
             <span>Share:</span>
-            <a href="https://twitter.com/intent/tweet?text=Jekyll和Github搭建个人静态博客&url=http://localhost:4000/%E5%94%90%E9%95%9C/" title="Share on Twitter" rel="nofollow" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-            <a href="https://facebook.com/sharer.php?u=http://localhost:4000/%E5%94%90%E9%95%9C/" title="Share on Facebook" rel="nofollow" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-            <a href="https://plus.google.com/share?url=http://localhost:4000/%E5%94%90%E9%95%9C/" title="Share on Google+" rel="nofollow" target="_blank"><i class="fa fa-google" aria-hidden="true"></i></a>
+            <a href="https://twitter.com/intent/tweet?text=博客心得&url=http://localhost:4000/%E5%8D%9A%E5%AE%A2%E5%BF%83%E5%BE%97/" title="Share on Twitter" rel="nofollow" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+            <a href="https://facebook.com/sharer.php?u=http://localhost:4000/%E5%8D%9A%E5%AE%A2%E5%BF%83%E5%BE%97/" title="Share on Facebook" rel="nofollow" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+            <a href="https://plus.google.com/share?url=http://localhost:4000/%E5%8D%9A%E5%AE%A2%E5%BF%83%E5%BE%97/" title="Share on Google+" rel="nofollow" target="_blank"><i class="fa fa-google" aria-hidden="true"></i></a>
           </div><!-- End Share -->
         </div>
         <section class="author-box">
